@@ -37,14 +37,21 @@ export default function Packlist() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-start p-24">
-      <Typography variant="h4">Packlist</Typography>
-      <Typography variant="h5"> Wie viele Tage verreist du?</Typography>
+      <Typography className="p-6" variant="h4">
+        Packlist
+      </Typography>
+      <Typography className="p-4" variant="h5">
+        {" "}
+        Wie viele Tage verreist du?
+      </Typography>
       <TextField
         type="number"
         variant="standard"
         onChange={(e: any) => setDays(e.target.value)}
       />
-      <Typography variant="h5">Wie ist das Wetter?</Typography>
+      <Typography className="p-4" variant="h5">
+        Wie ist das Wetter?
+      </Typography>
       <Select
         id="weather-type-select"
         value={weatherType}
